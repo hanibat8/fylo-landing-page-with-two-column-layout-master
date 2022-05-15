@@ -1,3 +1,4 @@
+URL - https://6280d7247f063c280cc38248--reliable-bombolone-01c581.netlify.app/
 # Frontend Mentor - Fylo landing page with two column layout
 
 ![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
