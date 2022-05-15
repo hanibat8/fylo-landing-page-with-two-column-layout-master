@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:link,
+a:visited, .footer__list{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 610rem;
+}
+
+.btn{
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 1.3rem 1.7rem;
+    border: none;
+    margin: 0 auto;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.btn:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+    transform: translateY(-.5rem);
+}
+
+.btn:active{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transform: translateY(0);
+}
+
+.btn--green{
+    text-align: center;
+    color: rgb(64, 216, 64);
+    border-bottom: 1px solid rgb(64, 216, 64);
+    transition: all .2s;
+}
+
+.btn--green:hover{
+    background-color: rgb(64, 216, 64);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn--green:active{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transform: translateY(0);
+}
+
+.center,.three__para{
+    text-align: center;
+}
+
+.para{
+    font-size: 1.7rem;
+}
+
+.first__heading{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.first__para{
+    margin: 2rem 0 2.6rem 0;
+    text-align: center;
+}
+
+.footer{
+    background-color: #000;
+    padding: 4rem 0 4rem 0;
+    color: #fff;
+}
+
+.footer__list{
+    list-style: none;
+    margin: 1.8rem 0;
+}
+
+.footer__link:link,
+.footer__link:visited{
+    color: #fff;
+}
+
+.footer__link:hover{
+    opacity: 30%;
+}
+
+.footer__logo{
+    width: 10rem;
+    color: #fff;
+}
+
+.form__input{
+    margin: 0 auto;
+    width: 85%;
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.3rem 1.7rem;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+.form__btn{
+    background-color: rgb(72, 90, 255);
+    color: #fff;
+    display: block;
+    width: 85%;
+    margin-bottom: 3rem;
+}
+
+.header{
+    padding: 1rem 0;
+}
+
+.header__item{
+    align-self:center ;
+}
+
+.header__item:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.header__link:link,
+.header__link:visited{
+    color: #000;
+}
+
+.header__link:hover{
+    color:rgb(216, 209, 248);
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+}
+
+.header__logo{
+    width: 8.5rem;
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second{
+    background-color: rgb(243, 242, 242);
+    padding: 4rem 0 4rem 0;
+}
+
+.second__box{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 1.8rem;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+
+.second__heading,.three__heading{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.second__para,.three__para{
+    margin:1.5rem 0 2rem 0;
+}
+
+.three{
+    padding: 3rem 0 4rem 0;
+    background-color: rgba(62, 52, 100, 0.836);
+    color: #fff;
+}
+
+.three__heading{
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:600px){
+
+    body{
+        line-height: 1.6;
+    }
+
+    a:link,
+    a:visited, 
+    .footer__list{
+        font-size: 2rem;
+    }
+
+    .btn{
+        font-size: 2rem;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .para{
+        font-size: 2rem;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .first,
+    .second,
+    .three,
+    .footer{
+        padding:10rem 0;
+    }
+
+    .first__heading,
+    .second__heading{
+        font-size: 3.5rem;
+        text-align: start;
+    }
+
+    .form__input{
+        font-size: 1.7rem;
+    }
+
+    .form__input{
+        width: 50%;
+        padding: 1.3rem ;
+        margin-right: 1rem;
+        display: inline-block;
+    }
+    
+    .form__btn{
+        display: inline-block;
+        width: 30%;
+    }
+
+    .footer{
+        padding-bottom: 3rem;
+    }
+
+    .header__logo{
+        width: 10rem;
+    }
+
+    .header__item:not(:last-child){
+        margin-right: 5.5rem;
+    }
+
+    .second__box{
+        margin:2rem 0 0 0;
+        width: 65%;
+    }
+
+    .three__heading{
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    .three .form__input{
+        width: 85%;
+        padding: 1.3rem ;
+        margin-right:0 ;
+        margin-left: 0;
+        display: block;
+    }
+    
+    .three .form__btn{
+        margin: 0;
+        display: block;
+        width: 55%;
+    }
+
+    .first .row .col:first-of-type,
+    .second .row .col:first-of-type{
+        order:2;
+        align-self: flex-start;
+        width: 40%;
+    }
+
+    .first .row .col:not(:first-of-type),
+    .second .row .col:not(:first-of-type){
+        width: 50%;
+    }
+
+    .footer .row .col{
+        width: 100%;
+    }
+
+    .three .row .col:first-of-type{
+        width: 50%;
+    }
+
+    .three .row .col:not(:first-of-type){
+        width: 40%;
+    }
+
+    .center,
+    .three__para,
+    .first__para{
+        text-align:start;
+    }
+
+}
